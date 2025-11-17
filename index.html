@@ -167,6 +167,33 @@
             border-left-color: #c62828;
         }
 
+        .campaigns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .campaign-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #c62828;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .campaign-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(198,40,40,0.15);
+        }
+
+        .campaign-card h3 {
+            color: #c62828;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
         .cta-section {
             background: linear-gradient(135deg, #c62828 0%, #8b0000 100%);
             color: white;
@@ -238,22 +265,33 @@
         <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#importancia">Importância</a></li>
-            <li><a href="#requisitos">Requisitos</a></li>
-            <li><a href="#processo">Processo</a></li>
-            <li><a href="#mitos">Mitos e Verdades</a></li>
+            <li><a href="#tipagem">Tipagem Sanguínea</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <section id="sobre">
             <h2>O Que é Doação de Sangue?</h2>
-            <p>[Texto temporário: Introduzir o conceito de doação de sangue, explicando o que é, como funciona e por que é um ato voluntário fundamental para o sistema de saúde. Descrever brevemente o processo e a segurança envolvida.]</p>
+            <p>É um ato que permite que pessoas necessitadas de transfusões sanguíneas possam receber sangue com o fim de enfrentar doenças crônicas. Por conta do sangue não poder ser fabricado artificialmente, a falta de doações em unidades médicas pode ser fatal em muitos casos.</p>
             
             <div class="highlight-box">
-                <p><strong>[Destaque:]</strong> Inserir aqui uma estatística impactante ou citação motivacional sobre doação de sangue.</p>
+                <p><strong>Importante:</strong> O sangue não pode ser fabricado artificialmente, tornando a doação a única forma de garantir que hospitais tenham estoques suficientes para salvar vidas.</p>
             </div>
 
-            <p>[Texto temporário: Continuar explicando a importância histórica da doação de sangue e como ela se desenvolveu ao longo do tempo. Mencionar avanços tecnológicos e de segurança.]</p>
+            <h3>Em quais Situações as Pessoas Costumam Perder Sangue?</h3>
+            <p>Em diversas situações as pessoas costumam necessitar de uma transfusão sanguínea. Algumas delas são acidentes, onde pessoas podem ficar gravemente feridas podendo perder volumes grandes de sangue. Algumas cirurgias também podem demandar de uma grande quantidade de sangue por conta de tratar de cortes extremamente sensíveis feitos pelos médicos.</p>
+
+            <h3>O Que Acontece se uma Pessoa Perder Sangue?</h3>
+            <p>Quando uma pessoa perde sangue, o corpo reage de diferentes formas dependendo da quantidade perdida:</p>
+            
+            <div class="requirements-list">
+                <ul>
+                    <li><strong>15 a 30% de perda (quase 1,5L):</strong> O coração dispara chegando a mais de 100 bpm e sintomas de ansiedade aparecem.</li>
+                    <li><strong>30 a 40% de perda (quase 2L):</strong> O nível de consciência diminui por conta da má oxigenação e a pressão arterial cai. A transfusão se torna necessária junto com soro fisiológico na veia.</li>
+                    <li><strong>Acima de 40%:</strong> O paciente fica com confusão mental e não responde mais a estímulos.</li>
+                    <li><strong>Acima de 50% (mais de 2,5L):</strong> O perigo de morte se torna iminente.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="importancia">
@@ -261,81 +299,37 @@
             
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">[XX%]</div>
-                    <div class="stat-label">Estatística sobre necessidade de doação</div>
+                    <div class="stat-number">1,4-1,8%</div>
+                    <div class="stat-label">Da população brasileira doa sangue regularmente</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">[X]</div>
-                    <div class="stat-label">Vidas salvas por doação</div>
+                    <div class="stat-number">3-5%</div>
+                    <div class="stat-label">Meta ideal recomendada pela OMS</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">[XXmin]</div>
-                    <div class="stat-label">Tempo do processo</div>
+                    <div class="stat-number">3-4M</div>
+                    <div class="stat-label">Doadores anuais no Brasil</div>
                 </div>
             </div>
 
-            <h3>Quem Precisa de Sangue?</h3>
-            <p>[Texto temporário: Explicar os diferentes grupos que necessitam de transfusões sanguíneas: pacientes em cirurgias, vítimas de acidentes, pessoas com doenças crônicas, tratamentos de câncer, etc.]</p>
-
-            <h3>Impacto Social</h3>
-            <p>[Texto temporário: Discutir o impacto social da doação de sangue, incluindo dados sobre a demanda nos hospitais, períodos críticos de baixa nos estoques e a importância da doação regular.]</p>
+            <p>Atualmente, no Brasil, entre 1,4% e 1,8% da população doa sangue regularmente. Isso representa aproximadamente entre 3,1 milhões a 4 milhões de doadores anuais, considerando a população brasileira. Apesar de estar dentro do parâmetro mínimo recomendado pela Organização Mundial da Saúde (OMS), que é 1%, esse percentual ainda é abaixo da meta ideal que gira em torno de 3% a 5% para garantir estoques seguros em todo o país.</p>
         </section>
 
-        <section id="requisitos">
-            <h2>Requisitos para Doar</h2>
+        <section id="tipagem">
+            <h2>Tipagem Sanguínea</h2>
             
-            <div class="requirements-list">
-                <h3>Requisitos Básicos</h3>
-                <ul>
-                    <li>[Idade mínima e máxima para doação]</li>
-                    <li>[Peso mínimo necessário]</li>
-                    <li>[Condições de saúde gerais]</li>
-                    <li>[Documentação necessária]</li>
-                    <li>[Frequência permitida entre doações]</li>
-                </ul>
-            </div>
-
-            <h3>Impedimentos Temporários</h3>
-            <p>[Texto temporário: Listar e explicar situações que impedem temporariamente a doação, como resfriados, procedimentos médicos recentes, gravidez, amamentação, etc.]</p>
-
-            <h3>Impedimentos Definitivos</h3>
-            <p>[Texto temporário: Explicar condições que impedem permanentemente a doação de sangue, sempre de forma respeitosa e informativa.]</p>
-        </section>
-
-        <section id="processo">
-            <h2>Como é o Processo de Doação?</h2>
-            
-            <h3>1. Cadastro e Triagem</h3>
-            <p>[Texto temporário: Descrever o processo inicial de cadastro, preenchimento de formulários e entrevista preliminar.]</p>
-
-            <h3>2. Avaliação Médica</h3>
-            <p>[Texto temporário: Explicar a avaliação médica, verificação de sinais vitais, teste de anemia e outras verificações de saúde.]</p>
-
-            <h3>3. Coleta do Sangue</h3>
-            <p>[Texto temporário: Descrever detalhadamente o processo de coleta, quanto tempo leva, quanto sangue é coletado e os cuidados durante o procedimento.]</p>
-
-            <h3>4. Lanche e Repouso</h3>
-            <p>[Texto temporário: Explicar a importância do período de recuperação pós-doação e os cuidados recomendados.]</p>
+            <h3>O que é Tipagem Sanguínea e Por Que é Importante?</h3>
+            <p>A tipagem sanguínea é o processo de coleta e identificação do grupo sanguíneo do paciente. Saber o grupo sanguíneo do paciente é essencial para a doação e transfusão, porque nem todos os tipos sanguíneos são compatíveis entre si.</p>
 
             <div class="highlight-box">
-                <p><strong>[Dica:]</strong> Inserir aqui recomendações práticas para o dia da doação (alimentação, hidratação, o que levar, etc.)</p>
+                <p><strong>Doador Universal:</strong> Às vezes o hospital não tem a bolsa de sangue da tipagem do paciente em quantidade suficiente, então terá que utilizar outro grupo sanguíneo compatível com o paciente para continuar a transfusão. Um exemplo é o tipo "O-" que é um doador universal para todas as tipagens de sangue.</p>
             </div>
-        </section>
 
-        <section id="mitos">
-            <h2>Mitos e Verdades</h2>
-            
-            <h3>Mito: [Inserir mito comum]</h3>
-            <p>[Texto temporário: Desmistificar com informações científicas e claras.]</p>
+            <h3>Como a Tipagem Afeta o Estoque de Sangue?</h3>
+            <p>A quantidade de sangue de tipos diferentes em bancos de sangue afeta diretamente nos pacientes que os hospitais podem salvar e prover transfusões, tendo em vista a incompatibilidade entre os tipos de sangues.</p>
 
-            <h3>Mito: [Inserir outro mito comum]</h3>
-            <p>[Texto temporário: Desmistificar com informações científicas e claras.]</p>
-
-            <h3>Verdade: [Inserir verdade importante]</h3>
-            <p>[Texto temporário: Confirmar e explicar fatos verdadeiros sobre doação.]</p>
-
-            <h3>Verdade: [Inserir outra verdade importante]</h3>
-            <p>[Texto temporário: Confirmar e explicar fatos verdadeiros sobre doação.]</p>
+            <h3>Desafios na Captação e Manutenção de Estoques</h3>
+            <p>O Brasil enfrenta desafios constantes na manutenção de estoques adequados de todos os tipos sanguíneos. A distribuição desigual de doadores por tipo sanguíneo e a necessidade de reposição constante devido ao prazo de validade limitado do sangue tornam essencial a doação regular e consciente da população.</p>
         </section>
 
         <div class="cta-section">
